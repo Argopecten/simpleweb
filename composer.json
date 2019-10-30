@@ -1,0 +1,100 @@
+{
+    "name": "argopecten/simpleweb",
+    "description": "Composer template for a simple drupal install profile with wysiwyg feature and selected themes",
+    "version": "0.1",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Argopecten",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/7"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/ckeditor",
+                "version": "4.9.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.9.2/ckeditor_4.9.2_standard.tar.gz",
+                    "type": "tar"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "^1.2",
+        "composer/semver": "^1.4",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal-composer/preserve-paths": "^0.1",
+        "drupal/composer_autoloader": "^1.0",
+        "drupal/ctools": "1.15",
+        "drupal/views": "3.20",
+        "drupal/advanced_help": "1.5",
+        "drupal/google_analytics": "2.6",
+        "drupal/danland": "1.0",
+        "drupal/nitobe": "2.0-beta1",
+        "drupal/professional_theme": "2.05",
+        "drupal/business": "1.11",
+        "drupal/imce": "1.11",
+        "drupal/wysiwyg": "2.5",
+        "drupal/imce_wysiwyg": "1.0",
+        "ckeditor/ckeditor": "4.9.2"
+    },
+    "conflict": {
+        "drupal/core": "8.*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-create-project-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::removeInternalFiles"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "web/profiles/{$name}/": ["type:drupal-profile"],
+            "web/sites/all/libraries/{$name}/": ["type:drupal-library"],
+            "web/profiles/{$name}/modules/{$name}/": ["type:drupal-module"],
+            "web/profiles/{$name}/themes/{$name}/": ["type:drupal-theme"]
+        },
+        "patches": {
+            "cweagans/composer-patches": {
+                "Call the preserve paths hooks" : "https://github.com/SebCorbin/composer-patches/commit/1cb9bacba51f8bba0c5f3f322c3bb61e4ceae974.patch"
+            }
+        },
+        "preserve-paths": [
+            "web/sites"
+        ]
+    }
+}
