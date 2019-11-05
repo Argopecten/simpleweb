@@ -1,2 +1,2 @@
 # simpleweb
-Composer template for a simple drupal install profile with wysiwyg feature and selected themes 
+Install profile of a simple drupal profile with wysiwyg feature and selected themes
