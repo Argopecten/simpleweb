@@ -1,5 +1,6 @@
 {
-    "name": "Argopecten/simpleweb",
+    "name": "argopecten/simpleweb",
     "type": "drupal-profile",
+    "version": "8.x-1.0"
     "description": "The simpleweb profile of Argopecten."
 }
