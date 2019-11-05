@@ -3,4 +3,14 @@
     "type": "drupal-profile",
     "version": "8.x-1.0",
     "description": "The simpleweb profile of Argopecten."
-}
+    "repositories": {
+       "drupal": {
+         "type": "composer",
+         "url": "https://packages.drupal.org/8"
+       }
+     }
+     "require": {
+         "php": ">=7.2",
+         "drupal/ctools": "1.5"
+     }
+ }
