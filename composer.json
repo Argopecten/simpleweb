@@ -11,6 +11,6 @@
      },
      "require": {
          "php": ">=7.2",
-         "drupal/ctools": "1.5"
+         "drupal/ctools": "3.2"
      }
 }
