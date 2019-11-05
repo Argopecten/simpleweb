@@ -1,6 +1,6 @@
 name: Simpleweb
 type: profile
-description: 'Install the <i>Simpleweb</i> website modules and thmese'
+description: 'Install and enable the <i>Simpleweb</i> website modules and themes'
 version: 1.0
 core: 8.x
 dependencies:
@@ -9,16 +9,13 @@ dependencies:
   - block
   - breakpoint
   - ckeditor
-  - color
   - config
+  - contextual
   - block_content
   - menu_link_content
-  - dblog
   - field
   - field_ui
   - filter
-  - help
-  - history
   - dynamic_page_cache
   - page_cache
   - menu_ui
@@ -27,12 +24,9 @@ dependencies:
   - quickedit
   - rdf
   - search
-  - shortcut
   - system
-  - taxonomy
   - editor
   - toolbar
-  - update
   - user
   - views
   - views_ui
@@ -47,4 +41,3 @@ dependencies:
 themes:
   - seven
   - bartik
-  - danland
