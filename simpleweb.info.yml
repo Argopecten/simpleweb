@@ -6,38 +6,25 @@ core: 8.x
 dependencies:
   - automated_cron
   - big_pipe
-  - block
-  - breakpoint
   - ckeditor
   - config
-  - contextual
   - block_content
-  - menu_link_content
-  - field
+  - datetime
   - field_ui
-  - filter
+  - image
   - dynamic_page_cache
   - page_cache
   - menu_ui
   - node
+  - options
   - path
   - quickedit
   - rdf
   - search
-  - system
-  - editor
   - toolbar
-  - user
-  - views
   - views_ui
-  - datetime
-  - file
-  - image
-  - link
-  - options
-  - text
+install:
   - ctools
-  - google_analytics
 themes:
   - seven
   - bartik
