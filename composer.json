@@ -12,6 +12,8 @@
      "require": {
          "php": ">=7.2",
          "drupal/ctools": "3.2",
-         "drupal/google_analytics": "2.4"
+         "drupal/google_analytics": "2.4",
+         "drupal/token": "1.5",
+         "drupal/pathauto": "1.5"
      }
 }
