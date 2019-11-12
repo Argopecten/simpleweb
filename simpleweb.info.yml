@@ -1,10 +1,18 @@
 name: Simpleweb
-old_short_name: standard
-exclusive: 1
 type: profile
 description: 'Install and enable the <i>Simpleweb</i> website modules and themes'
-version: 1.0
 core: 8.x
+
+# Declare installation profile as a distribution, this will make the installer
+# auto-select this installation profile.
+distribution:
+  # label for the software being installed
+  name: Simpleweb
+  # pre-select a language
+  # langcode: de
+
+# Required modules
+# Dependencies of these modules will be installed automatically.
 dependencies:
   - automated_cron
   - big_pipe
@@ -25,8 +33,13 @@ dependencies:
   - search
   - toolbar
   - views_ui
+
+# Modules to install to the profile:
 install:
   - ctools
+
+# Themes that should be installed as part of the profile installation.
+# Note that this will not set any theme as the default theme.
 themes:
   - seven
   - bartik
