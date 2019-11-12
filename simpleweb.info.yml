@@ -1,5 +1,6 @@
 name: Simpleweb
 old_short_name: standard
+exclusive: 1
 type: profile
 description: 'Install and enable the <i>Simpleweb</i> website modules and themes'
 version: 1.0
