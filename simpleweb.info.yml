@@ -1,7 +1,14 @@
 name: Simpleweb
+
+# name of old profile migrated from
+# delete this old profile on the new platform
+old_short_name: standard
 type: profile
 description: 'Install and enable the <i>Simpleweb</i> website modules and themes'
 core: 8.x
+
+# Aegir pick up this profile
+exclusive: TRUE
 
 # Declare installation profile as a distribution, this will make the installer
 # auto-select this installation profile.
