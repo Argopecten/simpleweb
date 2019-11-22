@@ -1,7 +1,6 @@
 {
     "name": "argopecten/simpleweb",
     "type": "drupal-profile",
-    "version": "1.0",
     "description": "The simpleweb profile of Argopecten.",
     "repositories": {
        "drupal": {
