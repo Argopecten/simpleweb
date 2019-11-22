@@ -50,3 +50,17 @@ install:
 themes:
   - seven
   - bartik
+  - medium_theme
+  - sales_zymphonies_theme
+  - news_zymphonies_theme
+  - industrial_zymphonies_theme
+  - drupal8_custom_theme
+  - professional_responsive_theme
+  - awesome_zymphonies_theme
+  - creative_responsive_theme
+  - business_responsive_theme
+  - drupal8_zymphonies_theme
+  - startup_zymphonies_theme
+  - onepage_zymphonies_theme
+  - base_zymphonies_theme
+  - light_zymphonies_theme
