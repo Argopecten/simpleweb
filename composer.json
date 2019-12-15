@@ -10,7 +10,7 @@
      },
      "require": {
          "php": "7.2.* || 7.3.*",
-         "drupal/core":             "~8.7.0",
+         "drupal/core":             "~8.8.0",
          "drupal/ctools":           "3.2",
          "drupal/google_analytics": "2.4",
          "drupal/token":            "1.5",
